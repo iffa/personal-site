@@ -1,31 +1,13 @@
-// Custom Theming for Angular Material
-// For more information: https://material.angular.io/guide/theming
 @import '~@angular/material/theming';
-// Plus imports for other components in your app.
 
-// Include the common styles for Angular Material. We include this here so that you only
-// have to load a single css file for Angular Material in your app.
-// Be sure that you only ever include this mixin once!
-@include mat-core();
+$personal-site-typography: mat-typography-config($font-family: '"Lato", sans-serif;');
+@include mat-core($personal-site-typography);
 
-// Define the palettes for your theme using the Material Design palettes available in palette.scss
-// (imported above). For each palette, you can optionally specify a default, lighter, and darker
-// hue. Available color palettes: https://material.io/design/color/
-$personal-site-primary: mat-palette($mat-indigo);
-$personal-site-accent: mat-palette($mat-pink, A200, A100, A400);
-
-// The warn palette is optional (defaults to red).
-$personal-site-warn: mat-palette($mat-red);
-
-// Create the theme object (a Sass map containing all of the palettes).
-$personal-site-theme: mat-light-theme($personal-site-primary, $personal-site-accent, $personal-site-warn);
-
-// Include theme styles for core and each component used in your app.
-// Alternatively, you can import and @include the theme mixins for each component
-// that you are using.
+$personal-site-primary: mat-palette($mat-blue, A500, A400, A600);
+$personal-site-accent: mat-palette($mat-light-blue, A200, A100, A400);
+$personal-site-warn: mat-palette($mat-deep-orange);
+$personal-site-theme: mat-dark-theme($personal-site-primary, $personal-site-accent, $personal-site-warn);
 @include angular-material-theme($personal-site-theme);
-
-/* You can add global styles to this file, and also import other style files */
 
 html, body {
   height: 100%;
@@ -33,5 +15,7 @@ html, body {
 
 body {
   margin: 0;
-  font-family: 'Lato', 'Helvetica Neue', sans-serif;
+  background-image: url("/assets/home-background-pinker.png");
+  background-repeat: no-repeat;
+  background-size: auto;
 }

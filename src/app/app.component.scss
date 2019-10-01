@@ -1,0 +1,35 @@
+@import '~@angular/material/theming';
+
+.app-content {
+  max-width: 1600px;
+  margin: 0 auto;
+  float: none;
+}
+
+.toolbar {
+  background: none;
+}
+
+.toolbar-title {
+  // background: linear-gradient(to right, #ec407a 0%, #d32f2f 100%);
+  // -webkit-background-clip: text;
+  // -webkit-text-fill-color: transparent;
+  font-size: 1.5em;
+  color: white;
+}
+
+.toolbar-button {
+  @include mat-elevation-transition(360ms, cubic-bezier(0.86, 0, 0.07, 1));
+  @include mat-elevation(0);
+
+  color: white;
+  // color: #ec407a;
+  margin: 16px 8px;
+  min-width: 100px;
+  text-transform: uppercase;
+  font-weight: 700;
+
+  &:hover {
+    @include mat-elevation(1, #e91e63, 0.5);
+  }
+}
