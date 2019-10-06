@@ -6,7 +6,7 @@ $personal-site-typography: mat-typography-config($font-family: '"Lato", sans-ser
 $personal-site-primary: mat-palette($mat-blue, A500, A400, A600);
 $personal-site-accent: mat-palette($mat-light-blue, A200, A100, A400);
 $personal-site-warn: mat-palette($mat-deep-orange);
-$personal-site-theme: mat-dark-theme($personal-site-primary, $personal-site-accent, $personal-site-warn);
+$personal-site-theme: mat-light-theme($personal-site-primary, $personal-site-accent, $personal-site-warn);
 @include angular-material-theme($personal-site-theme);
 
 html, body {
@@ -15,7 +15,9 @@ html, body {
 
 body {
   margin: 0;
-  background-image: url("/assets/home-background-pinker.png");
-  background-repeat: no-repeat;
-  background-size: auto;
+}
+
+* {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }

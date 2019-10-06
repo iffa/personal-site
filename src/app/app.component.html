@@ -1,12 +1,57 @@
-<div class="app-content">
-  <mat-toolbar class="toolbar" fxLayout="row">
-    <span class="toolbar-title">&lt;iffa<b>.dev</b>&gt;</span>
-    <span fxFlex></span>
-    <a mat-button class="toolbar-button">Home</a>
-    <a mat-button class="toolbar-button">Portfolio</a>
-    <a mat-button class="toolbar-button">Contact</a>
-  </mat-toolbar>
+<div fxLayout="column" class="base">
+  <div class="top-base" fxLayout="column">
+    <div class="app-content">
+      <mat-toolbar class="toolbar" fxLayout="row">
+        <h2 class="mat-h2 toolbar-title">iffa</h2>
+        <div fxFlex></div>
+        <a mat-flat-button href="mailto:me@santeri.xyz" class="button">Contact me</a>
+      </mat-toolbar>
 
-  <router-outlet></router-outlet>
+      <div class="intro-container">
+        <h1 class="mat-h1 intro-title">Santeri Elo</h1>
+        <h2 class="mat-h2 intro-subtitle">Web & Mobile Developer</h2>
+        <p class="intro-bullet-point">Angular • Android • NodeJS</p>
+
+        <div class="intro-socials">
+          <a mat-icon-button aria-label="LinkedIn" href="https://linkedin.com/in/santerielo/"
+             target=”_blank” rel=”noopener”>
+            <fa-icon [icon]="linkedIn" size="lg"></fa-icon>
+          </a>
+          <a mat-icon-button aria-label="Twitter" href="https://twitter.com/iffa_dev"
+             target=”_blank” rel=”noopener”>
+            <fa-icon [icon]="twitter" size="lg"></fa-icon>
+          </a>
+          <a mat-icon-button aria-label="GitHub" href="https://github.com/iffa"
+             target=”_blank” rel=”noopener”>
+            <fa-icon [icon]="github" size="lg"></fa-icon>
+          </a>
+        </div>
+
+        <p class="intro-about">
+          Young, bright-minded software developer, with a strong background in mobile application development, and an
+          interest in open source and the latest technologies. Solid understanding of full-stack web development, with
+          experience managing releases and projects, and automating product releases using different deployment
+          pipelines.
+        </p>
+        <p>
+          Currently creating web & mobile solutions at <b>CGI</b>.
+        </p>
+      </div>
+
+      <!-- <router-outlet></router-outlet> -->
+    </div>
+  </div>
+  <div class="bottom-base" fxFlex>
+    <div class="bottom-card mat-elevation-z1" fxLayout="column">
+      <h1 class="mat-h1 bottom-card-title">Portfolio</h1>
+      <h2 class="mat-h2 bottom-card-subtitle">Latest & greatest</h2>
+
+      <div class="portfolio-card">
+        <img src="/assets/citybike_mock.png" class="portfolio-mockup">
+      </div>
+
+      <p class="bottom-card-button-title">Want to build an app?</p>
+      <a mat-flat-button href="mailto:me@santeri.xyz" class="button bottom">Contact me</a>
+    </div>
+  </div>
 </div>
-

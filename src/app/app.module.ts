@@ -4,13 +4,12 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { FlexLayoutModule } from '@angular/flex-layout';
-import { MatButtonModule, MatToolbarModule } from '@angular/material';
-import { HomeComponent } from './views/home/home.component';
+import { MatButtonModule, MatIconModule, MatToolbarModule } from '@angular/material';
+import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 
 @NgModule({
   declarations: [
     AppComponent,
-    HomeComponent
   ],
   imports: [
     BrowserModule,
@@ -19,6 +18,8 @@ import { HomeComponent } from './views/home/home.component';
     FlexLayoutModule,
     MatToolbarModule,
     MatButtonModule,
+    MatIconModule,
+    FontAwesomeModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
