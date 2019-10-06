@@ -43,11 +43,36 @@
   </div>
   <div class="bottom-base" fxFlex>
     <div class="bottom-card mat-elevation-z1" fxLayout="column">
-      <h1 class="mat-h1 bottom-card-title">Portfolio</h1>
-      <h2 class="mat-h2 bottom-card-subtitle">Latest & greatest</h2>
+      <div fxLayout="column" fxLayoutAlign="center center">
+        <h1 class="mat-h1 bottom-card-title">Portfolio</h1>
+        <h2 class="mat-h2 bottom-card-subtitle">Latest & greatest</h2>
+      </div>
 
-      <div class="portfolio-card">
-        <img src="/assets/citybike_mock.png" class="portfolio-mockup">
+      <div class="portfolio-card" fxLayout="row">
+        <div fxLayout="column">
+          <div fxLayoutAlign="start start" fxLayoutAlign.lt-lg="center center">
+            <!--suppress HtmlUnknownTarget - it exists just shut up -->
+            <img alt="App icon" src="/assets/citybike_icon.png" class="portfolio-icon">
+          </div>
+          <div fxLayout="column" fxLayoutAlign.lt-lg="center center">
+            <h1 class="mat-h1 portfolio-title">Turku city bikes (Fölläri)</h1>
+            <h2 class="mat-h2 portfolio-subtitle">Android app</h2>
+            <p class="portfolio-text">See the availability of Turku's city bikes anywhere & anytime: always
+              up-to-date.</p>
+
+            <a target=”_blank” rel=”noopener”
+               href='https://play.google.com/store/apps/details?id=xyz.santeri.citybike&pcampaignid=MKT-Other-global-all-co-prtnr-py-PartBadge-Mar2515-1'>
+              <img class="portfolio-play-store" alt='Get it on Google Play'
+                   src='https://play.google.com/intl/en_us/badges/images/generic/en_badge_web_generic.png'/>
+            </a>
+          </div>
+        </div>
+        <div fxFlex class="portfolio-spacer"></div>
+        <div fxLayoutAlign="center center" fxHide.lt-lg>
+          <!--suppress HtmlUnknownTarget - it exists just shut up -->
+          <img alt="App screenshot" src="/assets/citybike_mock.png" class="portfolio-mockup"
+               fxLayoutAlign="center center">
+        </div>
       </div>
 
       <p class="bottom-card-button-title">Want to build an app?</p>

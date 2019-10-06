@@ -49,6 +49,7 @@
 }
 
 .intro-title {
+  line-height: 1em;
   font-weight: 900;
   font-size: 3em;
   text-transform: uppercase;
@@ -91,9 +92,7 @@
 .bottom-card {
   background: white;
   border-radius: 4px;
-  margin-top: -128px;
-  margin-left: 20vw;
-  margin-right: 20vw;
+  margin: -128px 20vw 32px;
   padding: 48px 16px;
 
   font-family: 'Montserrat', sans-serif;
@@ -105,7 +104,7 @@
   font-weight: 700;
   font-size: 2em;
   text-transform: uppercase;
-  margin: 0 auto;
+  margin: 0;
   color: #F53B57;
 }
 
@@ -114,26 +113,103 @@
   font-size: 1em;
   text-transform: uppercase;
   color: #808e9b;
-  margin-left: auto;
-  margin-right: auto;
 }
 
 .bottom-card-button-title {
-  font-weight: 500;
+  font-weight: 700;
   font-size: 1em;
   color: #1e272e;
-  margin: 48px auto 16px;
+  margin: 96px auto 16px;
 }
 
 .portfolio-card {
   background: white;
   border-radius: 4px;
-  padding: 48px 16px;
+  margin-top: 64px;
+  margin-left: 32px;
+  margin-right: 32px;
+  padding: 48px;
+  height: 384px;
 
-  @include mat-elevation(24, #1e272e, 0.35);
+  @include mat-elevation(24, #1e272e, 0.4);
 }
 
 .portfolio-mockup {
   object-fit: contain;
-  height: 250px;
+  height: 512px;
+}
+
+.portfolio-play-store {
+  object-fit: contain;
+  height: 64px;
+  margin-left: -12px;
+  margin-top: 16px;
+}
+
+.portfolio-icon {
+  object-fit: contain;
+  height: 128px;
+  margin-top: -96px;
+  margin-left: -8px;
+  margin-bottom: 32px;
+}
+
+.portfolio-title {
+  color: #F53B57;
+  font-family: 'Lato', sans-serif;
+  font-weight: 900;
+  font-size: 2em;
+  text-transform: uppercase;
+  margin-bottom: 0;
+}
+
+.portfolio-subtitle {
+  color: #F53B57;
+  font-family: 'Lato', sans-serif;
+  font-weight: 900;
+  font-size: 1em;
+  text-transform: uppercase;
+  margin-top: 0;
+}
+
+.portfolio-text {
+  font-weight: 700;
+  font-size: 1em;
+  color: #808e9b;
+}
+
+@media screen and (max-width: 959px) {
+  .app-content {
+    margin-left: 15vw;
+    margin-right: 15vw;
+  }
+
+  .bottom-card {
+    margin: -128px 10vw 32px;
+  }
+}
+
+@media screen and (max-width: 599px) {
+  .app-content {
+    margin-left: 10vw;
+    margin-right: 10vw;
+  }
+
+  .bottom-card {
+    margin: -128px 0 0;
+  }
+}
+
+@media screen and (max-width: 1279px) {
+  .portfolio-card {
+    height: auto;
+  }
+
+  .portfolio-play-store {
+    margin-left: 0;
+  }
+
+  .portfolio-icon {
+    margin-left: 0;
+  }
 }
