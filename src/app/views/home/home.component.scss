@@ -1,0 +1,28 @@
+.hello-container {
+  margin-top: 64px;
+  margin-left: 16px;
+  margin-right: 16px;
+}
+
+.hello-title {
+  color: white;
+  font-weight: 900;
+  font-size: 3.5em;
+
+  &.top {
+    margin-bottom: 24px;
+  }
+}
+
+.hello-subtitle {
+  color: white;
+  font-size: 1em;
+}
+
+.hello-title-focus {
+  color: darkturquoise;
+}
+
+.hello-portrait {
+  height: 512px;
+}
